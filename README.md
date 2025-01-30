@@ -1,4 +1,16 @@
-This is the preview:
+Try it here:
+
+# DrumKits
+
+This is a simple DrumKits webpage using HTML, Tailwind CSS, and JavaScript. 
+
+## Live Demo
+
+[Click here to visit the website](https://nikoonasrpooya.github.io/DrumKits/)
 
 
-<img width="781" alt="image" src="https://github.com/user-attachments/assets/2f4507ba-249e-4a0a-8475-06c2135c2fe0" />
+## Technologies Used
+
+- HTML
+- Tailwind CSS
+- JavaScript
