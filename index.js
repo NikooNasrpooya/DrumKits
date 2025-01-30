@@ -17,8 +17,8 @@ const playMusic = (path) => {
 
 }
 
-document.addEventListener("keypress", (event) => {
-    const triggeredKey = event.key;
+document.addEventListener("keydown", (event) => {
+    const triggeredKey = event.key.trim();
     makeSound(triggeredKey)
     animate(triggeredKey)
 })
@@ -65,9 +65,9 @@ auto_music_button.addEventListener("click", () => {
 })
 
 
-const makeSound = (key) => {
+const makeSound = (Key) => {
 
-    switch (key) {
+    switch (Key) {
         case "w":
             playMusic("sounds/sound-1.mp3");
             break;
@@ -99,7 +99,8 @@ const makeSound = (key) => {
 }
 
 const handleDrumClick = (event) => {
-    var innerHTML = event.target.innerHTML;
+    var innerHTML = event.target.innerHTML.trim();
+    console.log(innerHTML)
     animate(innerHTML)
     makeSound(innerHTML)
 }
